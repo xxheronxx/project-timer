@@ -1,0 +1,18 @@
+<p>
+  <b>Project:</b>
+  <%=h @interval.project %>
+</p>
+
+<p>
+  <b>Start-time:</b>
+  <%=h @interval.start-time %>
+</p>
+
+<p>
+  <b>End-time:</b>
+  <%=h @interval.end-time %>
+</p>
+
+
+<%= link_to 'Edit', edit_interval_path(@interval) %> |
+<%= link_to 'Back', intervals_path %>

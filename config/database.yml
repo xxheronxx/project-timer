@@ -17,10 +17,10 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: project_timer_development
+  database: project_timer_dev
   pool: 5
   username: root
-  password:
+  password: charluv
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -32,14 +32,14 @@ test:
   database: project_timer_test
   pool: 5
   username: root
-  password:
+  password: charluv
   socket: /tmp/mysql.sock
 
 production:
   adapter: mysql
   encoding: utf8
-  database: project_timer_production
+  database: project_timer
   pool: 5
   username: root
-  password: 
+  password: charluv
   socket: /tmp/mysql.sock

@@ -1,0 +1,24 @@
+<h1>Editing interval</h1>
+
+<% form_for(@interval) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :project %><br />
+    <%= f.text_field :project %>
+  </p>
+  <p>
+    <%= f.label :start-time %><br />
+    <%= f.datetime_select :start-time %>
+  </p>
+  <p>
+    <%= f.label :end-time %><br />
+    <%= f.datetime_select :end-time %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @interval %> |
+<%= link_to 'Back', intervals_path %>
