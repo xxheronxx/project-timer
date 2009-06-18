@@ -3,15 +3,17 @@
 <table>
   <tr>
     <th>Project</th>
-    <th>Start-time</th>
-    <th>End-time</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+	<th>Final Time</th>
   </tr>
 
 <% for interval in @intervals %>
   <tr>
     <td><%=h interval.project %></td>
-    <td><%=h interval.start-time %></td>
-    <td><%=h interval.end-time %></td>
+    <td><%=h interval.start_time %></td>
+    <td><%=h interval.end_time %></td>
+	<td><%=h interval.final_time %></td>
     <td><%= link_to 'Show', interval %></td>
     <td><%= link_to 'Edit', edit_interval_path(interval) %></td>
     <td><%= link_to 'Destroy', interval, :confirm => 'Are you sure?', :method => :delete %></td>
